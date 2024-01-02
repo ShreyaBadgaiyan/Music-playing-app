@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:myapp/screens/app.dart';
 void main(){
   //After writing the main function that's the void main, we firstly need to take care to run our app.
   //To do this we write runApp
@@ -10,6 +10,7 @@ void main(){
 
  runApp(MaterialApp(
 title:'GB Music Bash' ,
-   home:Text('My app'),
+   debugShowCheckedModeBanner: false,
+   home:new MyApp()
  ));
 }
